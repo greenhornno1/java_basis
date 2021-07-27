@@ -6,7 +6,7 @@ public class extendsAndSuper {
 
 /**
  * https://www.geeksforgeeks.org/instance-initialization-block-iib-java/
- *
+ * https://www.runoob.com/java/java-override-overload.html
  *
  * */
 
@@ -18,6 +18,9 @@ class A{
     }
     {
         System.out.println("A Instance Initialization Block");
+    }
+    public int toLeft(int y){
+        return y<<=1;
     }
 }
 
@@ -31,4 +34,8 @@ class B extends A{
     {
         System.out.println("B Instance Initialization Block");
     }
+    public long toLeft(){
+        return 1;
+    }
+
 }
